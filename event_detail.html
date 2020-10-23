@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="//fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="normalize.css">
+    <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="//unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="//unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Event Detail</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-xl">
+            <div class="nav">
+                <div class="nav__left">
+                    <a href="/">
+                        <img src="images/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="nav__right">
+                    <label id="toggleMenu" class="toggleMenu" for="menu_checkbox">
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+                            <path
+                                d="M10,1.445c-4.726,0-8.555,3.829-8.555,8.555c0,4.725,3.829,8.555,8.555,8.555c4.725,0,8.555-3.83,8.555-8.555C18.555,5.274,14.725,1.445,10,1.445 M10,17.654c-4.221,0-7.654-3.434-7.654-7.654c0-4.221,3.433-7.654,7.654-7.654c4.222,0,7.654,3.433,7.654,7.654C17.654,14.221,14.222,17.654,10,17.654 M14.39,10c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,9.55,14.39,9.752,14.39,10 M14.39,12.702c0,0.247-0.203,0.449-0.45,0.449H6.06c-0.248,0-0.45-0.202-0.45-0.449c0-0.248,0.203-0.451,0.45-0.451h7.879C14.187,12.251,14.39,12.454,14.39,12.702 M14.39,7.298c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,6.848,14.39,7.051,14.39,7.298">
+                            </path>
+                        </svg>
+                    </label>
+                    <input type="checkbox" id="menu_checkbox" class="menu_checkbox">
+                    <ul class="menu main-menu">
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/artist_disciplines.html">Artists</a></li>
+                        <li><a href="/events.html">Events</a></li>
+                        <li><a href="/exhibitions.html">Exhibitions</a></li>
+                        <li><a href="/gallery.html">Gallery</a></li>
+                        <li><a href="/join.html">Members</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li class="social-icon"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="social-icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="social-icon"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="social-icon"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                    <ul class="menu social">
+                        <li class="social-icon"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="social-icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="social-icon"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="social-icon"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="container">
+            <!-- BREADCRUMBS -->
+            <div class="breadcrumbs">
+                <a href="/">Home</a><span class="seperator">></span><span class="current">Event Detail</span>
+            </div>
+
+            <section class="section">
+                <div class="page-header d-flex">
+                    <h1 class="page-title t-upper mb-0">TITLE GOES HERE</h1>                    
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p class="pink">Greenhill House, London, EC1M 6BF</p>
+                    <div class="d-flex justify-content-between">
+                        <p class="start mr-30">Start date | 23 Sep 2020</p>
+                        <p class="end">End date | 25 Sep 2020</p>
+                    </div>
+                </div>
+
+                <div class="img-fluid">
+                    <img src="images/event-feat.png" alt="">
+                </div>
+
+                <div class="spacer"></div>
+
+                <div class="d-flex flex-wrap">
+                    <div class="w65p pr-50">
+                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit au
+                        ctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                        Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
+                        tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad
+                        litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus
+                        condimentum sit amet a augue. Sed n</p>
+                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit au
+                            ctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id
+                            elit.
+                            Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
+                            tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu
+                            ad
+                            litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus
+                            condimentum sit amet a augue. Sed n</p>
+                        <p>Location: 7 Grange Road STOCKPORT SK71 5GF</p>
+                        <hr class="half">
+                        <div class="gmap">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.8907571570085!2d-2.1581155839775334!3d53.38100407981554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb35772c48601%3A0xf2ed796196ad7b83!2s7%20Grange%20Rd%2C%20Bramhall%2C%20Stockport%20SK7%203BD%2C%20UK!5e0!3m2!1sen!2sph!4v1602498844014!5m2!1sen!2sph"
+                                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                                tabindex="0"></iframe>
+                        </div>
+                    </div>
+                    <div class="w35p d-flex-md flex-half">
+                        <div>
+                            <p class="bordered">Opening times</p>
+                            <p>Mon-Fri: 10 am to 4 pm</p>
+                            <p>Sat-Sun: 11 am to 3 pm</p>
+                            <p>Price: £200</p>
+                            <p></p>
+                            <p>External Links</p>
+                            <hr class="half">
+                        </div>
+                        <div>
+                            <img src="images/book.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spacer"></div>
+
+                <div class="grid">
+                    <div class="grid-sizer"></div>
+                    <div class="grid-item">
+                        <a data-fancybox="gallery" href="images/img1.png" data-price="200" data-author="Dawn Finn"
+                            data-work="Title of Work" data-caption="Caption #1">
+                            <img src="images/img1.png" />
+                            <div class="fig">
+                                <div class="fig__top">
+                                    <div class="fig__top-left">
+                                        Dawn Finn <span class="sep">|</span> <span class="t-upper">Title of the work</span>
+                                    </div>
+                                    <div class="fig__top-right">
+                                        <p class="t-upper mr-20">44 x 59 cm</p>
+                                        <p class="t-upper">Price £200</p>
+                                    </div>
+                                </div>
+                                <div class="fig__bot">
+                                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                                        sollicitudin, lorem quis
+                                        bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit
+                                        amet nibh vulputate cursus
+                                        a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a data-fancybox="gallery" href="images/img2.png">
+                            <img src="images/img2.png" />
+                            <div class="fig">
+                                <div class="fig__top">
+                                    <div class="fig__top-left">
+                                        Dawn Finn <span class="sep">|</span> <span class="t-upper">Title of the work 2</span>
+                                    </div>
+                                    <div class="fig__top-right">
+                                        <p class="t-upper mr-20">44 x 59 cm</p>
+                                        <p class="t-upper">Price £200</p>
+                                    </div>
+                                </div>
+                                <div class="fig__bot">
+                                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                                        sollicitudin,
+                                        lorem quis
+                                        bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit
+                                        amet nibh
+                                        vulputate cursus
+                                        a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a data-fancybox="gallery" href="images/img3.png">
+                            <img src="images/img3.png" />
+                            <div class="fig">
+                                <div class="fig__top">
+                                    <div class="fig__top-left">
+                                        Dawn Finn <span class="sep">|</span> <span class="t-upper">Title of the work</span>
+                                    </div>
+                                    <div class="fig__top-right">
+                                        <p class="t-upper mr-20">44 x 59 cm</p>
+                                        <p class="t-upper">Price £200</p>
+                                    </div>
+                                </div>
+                                <div class="fig__bot">
+                                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                                        sollicitudin,
+                                        lorem quis
+                                        bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit
+                                        amet nibh
+                                        vulputate cursus
+                                        a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a data-fancybox="gallery" href="images/img4.png">
+                            <img src="images/img4.png" />
+                            <div class="fig">
+                                <div class="fig__top">
+                                    <div class="fig__top-left">
+                                        Dawn Finn <span class="sep">|</span> <span class="t-upper">Title of the work</span>
+                                    </div>
+                                    <div class="fig__top-right">
+                                        <p class="t-upper mr-20">44 x 59 cm</p>
+                                        <p class="t-upper">Price £200</p>
+                                    </div>
+                                </div>
+                                <div class="fig__bot">
+                                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                                        sollicitudin,
+                                        lorem quis
+                                        bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit
+                                        amet nibh
+                                        vulputate cursus
+                                        a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a data-fancybox="gallery" href="images/img5.png">
+                            <img src="images/img5.png" />
+                            <div class="fig">
+                                <div class="fig__top">
+                                    <div class="fig__top-left">
+                                        Dawn Finn <span class="sep">|</span> <span class="t-upper">Title of the work</span>
+                                    </div>
+                                    <div class="fig__top-right">
+                                        <p class="t-upper mr-20">44 x 59 cm</p>
+                                        <p class="t-upper">Price £200</p>
+                                    </div>
+                                </div>
+                                <div class="fig__bot">
+                                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                                        sollicitudin,
+                                        lorem quis
+                                        bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit
+                                        amet nibh
+                                        vulputate cursus
+                                        a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a data-fancybox="gallery" href="images/img1.png">
+                            <img src="images/img1.png" />
+                            <div class="fig">
+                                <div class="fig__top">
+                                    <div class="fig__top-left">
+                                        Dawn Finn <span class="sep">|</span> <span class="t-upper">Title of the work</span>
+                                    </div>
+                                    <div class="fig__top-right">
+                                        <p class="t-upper mr-20">44 x 59 cm</p>
+                                        <p class="t-upper">Price £200</p>
+                                    </div>
+                                </div>
+                                <div class="fig__bot">
+                                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                                        sollicitudin,
+                                        lorem quis
+                                        bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit
+                                        amet nibh
+                                        vulputate cursus
+                                        a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a data-fancybox="gallery" href="images/img6.png">
+                            <img src="images/img6.png" />
+                            <div class="fig">
+                                <div class="fig__top">
+                                    <div class="fig__top-left">
+                                        Dawn Finn <span class="sep">|</span> <span class="t-upper">Title of the work</span>
+                                    </div>
+                                    <div class="fig__top-right">
+                                        <p class="t-upper mr-20">44 x 59 cm</p>
+                                        <p class="t-upper">Price £200</p>
+                                    </div>
+                                </div>
+                                <div class="fig__bot">
+                                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                                        sollicitudin,
+                                        lorem quis
+                                        bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit
+                                        amet nibh
+                                        vulputate cursus
+                                        a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <script>
+                    jQuery(document).ready(function ($) {
+                        $('[data-fancybox="gallery"]').fancybox({
+                            loop: true,
+                            clickOutside: "close",
+                            arrows: true,
+                            buttons: [
+                                'close'
+                            ],
+                            btnTpl: {
+                                arrowLeft:
+                                    '<button data-fancybox-prev class="fancybox-button fancybox-button--arrow_left" title="{{PREV}}">' +
+                                    '<div><i class="fas fa-angle-left"></i></div>' +
+                                    "</button>",
+                                arrowRight:
+                                    '<button data-fancybox-next class="fancybox-button fancybox-button--arrow_right" title="{{NEXT}}">' +
+                                    '<div><i class="fas fa-angle-right"></i></div>' +
+                                    "</button>",
+
+                            },
+                            caption: function (instance, item) {
+                                return $(this).find('.fig').html();
+                            }
+                        });
+                        var $grid = $('.grid').masonry({
+                            itemSelector: '.grid-item',
+                            percentPosition: true,
+                            columnWidth: '.grid-sizer'
+                        });
+                        // layout Masonry after each image loads
+                        $grid.imagesLoaded().progress(function () {
+                            $grid.masonry();
+                        });
+                    });
+                </script>
+
+            </section>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container-xl d-flex justify-between flex-wrap d-mobile-block">
+            <div class="footer__1">
+                <a href="#"><img src="images/footer-logo.png" alt=""></a>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida ni</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer__2">
+                <p class="f20 t-upper">Sign up to our monthly newsletter.</p>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida ni bh vel velit auctor aliquet</p>
+                <form action="#" class="form-flex">
+                    <input type="text" required placeholder="EMAIL">
+                    <button type="submit">SUBMIT</button>
+                </form>
+            </div>
+            <div class="footer__1">
+                <p class="f20 t-upper">How to join the EFOA</p>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida ni bh vel velit auctor aliquet</p>
+                <a href="#" class="button transparent-btn">Join the FTA</a>
+            </div>
+        </div>   
+        <div class="container-xl d-flex justify-between mt-50 align-center footer__bottom">
+            <div>
+                <p class="copy"><a href="https://www.mlawebdesigns.co.uk" target="_blank">Web Design</a> by MLA</p>
+            </div>
+            <div>
+                <a href="#" class="mr-30">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>     
+    </footer>
+</body>
+</html>
