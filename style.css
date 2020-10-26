@@ -446,6 +446,10 @@ ul.pink-list li::before {
     font-size: 28px;
 }
 
+.page-image {
+    margin-top: 30px;
+}
+
 .page-image img {
     width: 100%;
 }
@@ -511,7 +515,7 @@ form button {
 .archive-img {
     max-width: 382px;
     width: 100%;
-    height: 312px;
+    height: auto;
     margin: auto;
 }
 
@@ -843,6 +847,10 @@ p.bordered {
     display: block;
 }
 
+.flex-row > div {
+    flex: 1;
+}
+
 @media ( min-width: 600px ) {    
     .artist.d-flex {
         display: flex;
@@ -927,7 +935,7 @@ p.bordered {
         flex: 1;
         padding-left: 40px;
         text-align: left;
-        padding-right: 20x;
+        padding-right: 20px;
     }
 
     .archive-dark .archive-img {
@@ -968,15 +976,18 @@ p.bordered {
     }
 
     .archive-content h3 {
-        padding-top: 20px;
-    }
-
-    .archive-content {
-        padding: 0;
+        
     }
 
     .right-col {
         width: 40%;
+    }
+
+    .archive-img {
+        max-width: 382px;
+        width: 100%;
+        height: 312px;
+        margin: 0 auto;
     }
 }
 
