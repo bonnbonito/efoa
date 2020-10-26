@@ -508,9 +508,6 @@ form button {
 .archive-item {    
     position: relative;
     justify-content: center;
-}
-
-.archive-item:not(:last-child) {
     padding-bottom: 1.5em;
     margin-bottom: 1.5em;
     border-bottom: 1px solid #eee;
@@ -523,11 +520,9 @@ form button {
     margin: auto;
 }
 
-
 .archive-dark .archive-img {
     padding-top: 20px;
     width: 100%;
-   
 }
 
 .archive-img img {
@@ -855,6 +850,10 @@ p.bordered {
     flex: 1;
 }
 
+.flex-4 {
+    display: block;
+}
+
 @media ( min-width: 600px ) {    
     .artist.d-flex {
         display: flex;
@@ -864,6 +863,16 @@ p.bordered {
     }
     .mr-30-xs {
         margin-right: 30px;
+    }
+
+    .flex-4 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .flex-4-item {
+        width: 46%;
     }
 }
 
@@ -936,10 +945,15 @@ p.bordered {
     }
 
     .archive-content {
-        flex: 1;
-        padding-left: 40px;
+        flex: 1;       
         text-align: left;
-        padding-right: 20px;
+        padding: 0 20px 0 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    .archive-content p:last-child {
+        margin-bottom: 0;
     }
 
     .archive-dark .archive-img {
@@ -947,10 +961,6 @@ p.bordered {
         max-width: 100%;
         flex: 1;
     }    
-
-    .archive-item:not(:last-child) {
-        padding-bottom: 0;
-    }
 
     .d-flex-md {
         display: flex;
@@ -1002,9 +1012,17 @@ p.bordered {
     .archive-dark .archive-content {
        
     }
+
+    .flex-4-item {
+        width: 30%;
+    }
 }
 
 @media ( min-width: 1200px ) {
+
+    .flex-4-item {
+        width: 22%;
+    }
 
     .member-pagination.swiper-pagination {
         right: auto;
