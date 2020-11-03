@@ -84,8 +84,17 @@ SVG Icons - svgicons.sparkk.fr
     text-align: center !important;
 }
 
+.text-justify {
+    text-align: justify !important;
+}
+
 .flex-wrap {
     flex-wrap: wrap;
+}
+
+.ml-auto {
+    margin-left: auto;
+    display: block;
 }
 
 .container {
@@ -436,6 +445,8 @@ ul.pink-list li::before {
     color: #585858;
     text-transform: uppercase;
     margin-right: 30px;
+    padding-bottom: 15px;
+    display: inline-block;
 }
 
 .page-head-link a:hover {
@@ -508,7 +519,6 @@ form button {
 .archive-item {    
     position: relative;
     justify-content: center;
-    padding-bottom: 1.5em;
     margin-bottom: 1.5em;
     border-bottom: 1px solid #eee;
 }
@@ -1121,7 +1131,7 @@ p.bordered {
 
     .menu.main-menu {
         width: calc(100% - 210px);
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
     .menu.main-menu a {
@@ -1266,6 +1276,12 @@ p.bordered {
     background-color: transparent;
 }
 
+.form-flex input[type="email"] {
+    max-width: 250px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 .footer__2 {    
     margin: 60px auto;
 }
@@ -1278,6 +1294,7 @@ p.bordered {
     border: 1px solid #000;
     margin: 0;
     transition: .5s;
+    margin-bottom: 10px;
 }
 
 .form-flex button:hover {
