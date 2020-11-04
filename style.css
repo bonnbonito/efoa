@@ -479,6 +479,21 @@ ul.pink-list li::before {
     font-weight: 500;
 }
 
+.form-inputs label.error {
+    color: red;
+    font-size: 12px;
+}
+
+.form-inputs.form-inputs input.error,
+.form-inputs.form-inputs textarea.error {
+    border: 2px solid red;
+}
+
+.form-inputs.form-inputs input.valid,
+.form-inputs.form-inputs textarea.valid {
+    border: 2px solid green;
+}
+
 .form-inputs .span2,
 .form-inputs .span3,
 .form-inputs .spanfw {

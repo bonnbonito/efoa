@@ -84,21 +84,21 @@
                         <form action="#" class="c-form">
                             <div class="form-inputs">
                                 <div class="span2">
-                                    <input type="text" placeholder="FIRST NAME" required>
+                                    <input type="text" name="first_name" placeholder="FIRST NAME" required>
                                 </div>
                                 <div class="span2">
-                                    <input type="text" placeholder="LAST NAME" required>
+                                    <input type="text" name="last_name" placeholder="LAST NAME" required>
                                 </div>
                                 <div class="span2">
-                                    <input type="text" placeholder="PHONE" required>
+                                    <input type="text" name="phone" placeholder="PHONE" required>
                                 </div>
                                 <div class="span2">
-                                    <input type="email" placeholder="EMAIL" required>
+                                    <input type="email" name="email" placeholder="EMAIL" required>
                                 </div>
-                                <textarea name="message" placeholder="MESSAGE" required></textarea>
+                                <textarea name="message" name="message" placeholder="MESSAGE" required></textarea>
                             </div>
                             <button type="submit">SUBMIT</button>                            
-                        </form>                        
+                        </form>         
                     </div>
                     <div class="contact-details">
                         <h3 class="mt-0 mb-0">CONTACT</h3>
@@ -158,8 +158,11 @@
 
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" crossorigin="anonymous"></script>
-
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" crossorigin="anonymous"></script>   
+    <script>
+        jQuery(document).ready( function($){
+            $("form.c-form").validate();
+        });        
+    </script>  
 </body>
 </html>
