@@ -434,6 +434,7 @@ ul.pink-list li::before {
 .page-title {
     font-size: 38px;  
     line-height: 1.2;  
+    margin-bottom: 1rem;
 }
 
 .page-head-link {
@@ -836,7 +837,8 @@ p.bordered {
     opacity: 0;
 }
 
-.hide-mobile {
+.hide-mobile,
+.hide-tablet {
     display: none !important;
 }
 
@@ -1049,9 +1051,16 @@ p.bordered {
     .flex-4-item {
         width: 30%;
     }
+    .hide-tablet {
+        display: block !important;
+    }
 }
 
 @media ( min-width: 1200px ) {
+    
+    .hide-desktop {
+        display: none !important;
+    }
 
     .flex-4-item {
         width: 22%;
