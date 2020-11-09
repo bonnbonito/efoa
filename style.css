@@ -439,6 +439,7 @@ ul.pink-list li::before {
 
 .page-head-link {
     margin-top: 30px;
+    text-align: right;
 }
 
 .page-head-link a {
